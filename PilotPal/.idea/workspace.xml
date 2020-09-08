@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PilotPal:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4616b32b-ec75-4f2c-aa4b-9f7aea0610d2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h0auQ1B6a3oqSnovUYO6LFGgJz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="PilotPal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUtility" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PilotPal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestUtility" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUtility.testCheckDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PilotPal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestUtility" />
+      <option name="METHOD_NAME" value="testCheckDouble" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUtility.testCheckLetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PilotPal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestUtility" />
+      <option name="METHOD_NAME" value="testCheckLetter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUtility.testCheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PilotPal" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestUtility" />
+      <option name="METHOD_NAME" value="testCheckTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestUtility" />
+        <item itemvalue="JUnit.TestUtility.testCheckDouble" />
+        <item itemvalue="JUnit.TestUtility.testCheckTest" />
+        <item itemvalue="JUnit.TestUtility.testCheckLetter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4616b32b-ec75-4f2c-aa4b-9f7aea0610d2" name="Default Changelist" comment="" />
+      <created>1599150687268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599150687268</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="77" key="#Auto_Import" timestamp="1599586021713">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="77" key="#Auto_Import/0.23.1280.777@0.23.1280.777" timestamp="1599586021713" />
+    <state x="195" y="118" width="1080" height="577" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1599584214625">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="195" y="118" width="1080" height="577" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.777@0.23.1280.777" timestamp="1599584214625" />
+    <state x="453" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1599260799179">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="453" y="134" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1599260799179" />
+    <state x="378" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599342740150">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="378" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.777@0.23.1280.777" timestamp="1599342740150" />
+    <state width="1238" height="197" key="GridCell.Tab.0.bottom" timestamp="1599587249855">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1599587249855" />
+    <state width="1238" height="197" key="GridCell.Tab.0.center" timestamp="1599587249853">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1599587249853" />
+    <state width="1238" height="197" key="GridCell.Tab.0.left" timestamp="1599587249852">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1599587249852" />
+    <state width="1238" height="197" key="GridCell.Tab.0.right" timestamp="1599587249854">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1599587249854" />
+    <state x="128" y="23" key="SettingsEditor" timestamp="1599503021350">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="128" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1599503021350" />
+    <state x="250" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1599583235115">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="250" y="253" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1599583235115" />
+    <state x="352" y="312" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599503013227">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="352" y="312" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1280.777@0.23.1280.777" timestamp="1599503013227" />
+    <state x="239" y="34" key="new project wizard" timestamp="1599342914693">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="239" y="34" key="new project wizard/0.23.1280.777@0.23.1280.777" timestamp="1599342914693" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1599337695803">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1599337695803" />
+  </component>
+</project>

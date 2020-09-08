@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="671.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="View Ships">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="654.0">
+               <children>
+                  <ListView fx:id="shipsDisplay" disable="true" layoutX="14.0" layoutY="79.0" onMouseClicked="#selectShip" prefHeight="281.0" prefWidth="180.0" />
+                  <VBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="180.0">
+                     <children>
+                        <Label text="Ships">
+                           <font>
+                              <Font name="Baskerville" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="232.0" layoutY="10.0" prefHeight="35.0" prefWidth="137.0">
+                     <children>
+                        <Label text="Selected Ship:">
+                           <font>
+                              <Font name="Baskerville" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="searchShipsTxt" layoutX="14.0" layoutY="47.0" prefHeight="27.0" prefWidth="135.0" promptText="Search Ships" />
+                  <Button fx:id="searchShipsBtn" layoutX="157.0" layoutY="45.0" mnemonicParsing="false" onAction="#searchShips" prefHeight="31.0" prefWidth="37.0" text="⌕">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Button>
+                  <VBox layoutX="196.0" layoutY="47.0" prefHeight="50.0" prefWidth="226.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="15.0">
+                           <children>
+                              <Label text="Ship Name:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shipNameDisplay" disable="true" prefHeight="27.0" prefWidth="142.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="19.0">
+                           <children>
+                              <Label text="Ship Type:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shipTypeDisplay" disable="true" prefHeight="27.0" prefWidth="142.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="198.0" layoutY="107.0" prefHeight="54.0" prefWidth="186.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="33.0">
+                           <children>
+                              <Label text="Bow Thruster:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="thrusterDisplay" disable="true" prefHeight="30.0" prefWidth="65.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="27.0" prefWidth="164.0" spacing="10.0">
+                           <children>
+                              <Label text="Bow Thruster HP:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="thrusterHPDisplay" disable="true" prefHeight="27.0" prefWidth="71.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="deleteShipBtn" disable="true" layoutX="257.0" layoutY="325.0" mnemonicParsing="false" onAction="#deleteShip" text="Delete Ship">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="242.0" layoutY="174.0" text="Ballard Strengths:">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="197.0" layoutY="199.0" prefHeight="100.0" prefWidth="111.0" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="15.0">
+                           <children>
+                              <Label text="Center Lead Aft:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="60.0">
+                           <children>
+                              <Label text="Quarter:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="55.0">
+                           <children>
+                              <Label text="Shoulder:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="8.0">
+                           <children>
+                              <Label text="Center Lead Fwd:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="422.0" layoutY="53.0" prefHeight="108.0" prefWidth="122.0" spacing="2.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="20.0">
+                           <children>
+                              <Label text="Wheel Direction:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="20.0">
+                           <children>
+                              <Label text="Astern % Ahead:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="24.0">
+                           <children>
+                              <Label text="Bridge Distance:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="166.0" spacing="3.0">
+                           <children>
+                              <Label text="Centerline Distance:">
+                                 <font>
+                                    <Font name="Baskerville" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TextArea fx:id="commentsDisplay" disable="true" layoutX="388.0" layoutY="170.0" prefHeight="149.0" prefWidth="274.0">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="saveChangesBtn" disable="true" layoutX="463.0" layoutY="325.0" mnemonicParsing="false" onAction="#saveChanges" text="Save Changes">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Button>
+                  <VBox layoutX="550.0" layoutY="53.0" prefHeight="109.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="wheelDirectionDisplay" disable="true" prefHeight="27.0" prefWidth="100.0" />
+                        <TextField fx:id="asternAheadDisplay" disable="true" prefHeight="27.0" prefWidth="100.0" />
+                        <TextField fx:id="bridgeDistanceDisplay" disable="true" prefHeight="27.0" prefWidth="100.0" />
+                        <TextField fx:id="centerlineDistanceDisplay" disable="true" prefHeight="27.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="316.0" layoutY="199.0" prefHeight="107.0" prefWidth="55.0">
+                     <children>
+                        <TextField fx:id="leadAftDisplay" disable="true" prefHeight="27.0" prefWidth="55.0" />
+                        <TextField fx:id="quarterDisplay" disable="true" prefHeight="27.0" prefWidth="55.0" />
+                        <TextField fx:id="shoulderDisplay" disable="true" prefHeight="27.0" prefWidth="55.0" />
+                        <TextField fx:id="leadFwdDisplay" disable="true" prefHeight="27.0" prefWidth="55.0" />
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Add Ship">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="31.0" prefWidth="269.0">
+                     <children>
+                        <Label text="Add Ship">
+                           <font>
+                              <Font name="Baskerville" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="shipNameTxt" layoutX="40.0" layoutY="32.0" prefHeight="27.0" prefWidth="155.0" promptText="Ship Name" />
+                  <CheckBox fx:id="thrusterCheckBox" layoutX="65.0" layoutY="124.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="107.0" text="Bow Thruster">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="32.0" layoutY="149.0" prefHeight="27.0" prefWidth="112.0" text="Bow Thruster HP:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="thrusterHPTxt" layoutX="144.0" layoutY="149.0" prefHeight="27.0" prefWidth="57.0" />
+                  <Label layoutX="60.0" layoutY="199.0" text="Ballard Strengths (t):">
+                     <font>
+                        <Font name="Baskerville" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="235.0" text="Center Lead Aft:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="266.0" text="Quarter:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="298.0" text="Shoulder:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="shipTypeTxt" layoutX="40.0" layoutY="67.0" prefHeight="27.0" prefWidth="156.0" promptText="Ship Type" />
+                  <TextField fx:id="leadAftTxt" layoutX="148.0" layoutY="230.0" prefHeight="27.0" prefWidth="45.0" />
+                  <TextField fx:id="shoulderTxt" layoutX="148.0" layoutY="293.0" prefHeight="27.0" prefWidth="45.0" />
+                  <TextField fx:id="quarterTxt" layoutX="148.0" layoutY="262.0" prefHeight="27.0" prefWidth="45.0" />
+                  <Label layoutX="40.0" layoutY="327.0" text="Center Lead Fwd:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="leadFwdTxt" layoutX="148.0" layoutY="323.0" prefHeight="27.0" prefWidth="45.0" />
+                  <Label layoutX="252.0" layoutY="60.0" text="Wheel Direction:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="252.0" layoutY="95.0" text="Astern % Ahead:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="431.0" layoutY="60.0" text="Bridge Distance:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="420.0" layoutY="96.0" text="Centerline Distance:">
+                     <font>
+                        <Font name="Baskerville" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="wheelDirectionTxt" layoutX="364.0" layoutY="56.0" prefHeight="27.0" prefWidth="35.0" />
+                  <TextField fx:id="asternAheadTxt" layoutX="358.0" layoutY="90.0" prefHeight="27.0" prefWidth="48.0" />
+                  <TextField fx:id="centerlineDistanceTxt" layoutX="545.0" layoutY="91.0" prefHeight="27.0" prefWidth="77.0" />
+                  <TextField fx:id="bridgeDistanceTxt" layoutX="545.0" layoutY="56.0" prefHeight="27.0" prefWidth="77.0" />
+                  <TextArea fx:id="commentsTxt" layoutX="261.0" layoutY="143.0" prefHeight="164.0" prefWidth="361.0" promptText="Comments" />
+                  <Button fx:id="addShipBtn" layoutX="405.0" layoutY="314.0" mnemonicParsing="false" onAction="#addShip" text="Add Ship" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
