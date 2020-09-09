@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ListView fx:id="friendsDisplay" disable="true" layoutX="235.0" layoutY="55.0" onMouseClicked="#selectFriend" prefHeight="276.0" prefWidth="131.0" />
+      <TextField fx:id="friendName" layoutX="37.0" layoutY="55.0" promptText="Name" />
+      <HBox alignment="CENTER" layoutX="55.0" layoutY="6.0" prefHeight="41.0" prefWidth="131.0">
+         <children>
+            <Label text="Build a friend">
+               <font>
+                  <Font name="Baskerville" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="235.0" layoutY="337.0" prefHeight="63.0" prefWidth="131.0">
+         <children>
+            <Label text="All friends's non-age">
+               <font>
+                  <Font name="Baskerville" size="13.0" />
+               </font>
+            </Label>
+            <Label text="attributes are graded">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label text="on a scale of 1 to 10">
+               <font>
+                  <Font name="Baskerville" size="13.0" />
+               </font>
+            </Label>
+            <Label text="(1 is the worst)">
+               <font>
+                  <Font name="Baskerville" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="26.0" layoutY="286.0" text="Kindness">
+         <font>
+            <Font name="Baskerville" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="286.0" text="Craziness">
+         <font>
+            <Font name="Baskerville" size="12.0" />
+         </font>
+      </Label>
+      <Slider fx:id="kindnessInput" blockIncrement="1.0" layoutX="41.0" layoutY="155.0" max="10.0" min="1.0" orientation="VERTICAL" prefHeight="108.0" prefWidth="16.0" value="1.0" />
+      <TextField fx:id="friendAge" alignment="CENTER" layoutX="98.0" layoutY="102.0" prefHeight="27.0" prefWidth="45.0" promptText="Age" />
+      <Label layoutX="162.0" layoutY="286.0" text="Creativity">
+         <font>
+            <Font name="Baskerville" size="12.0" />
+         </font>
+      </Label>
+      <Slider fx:id="crazinessInput" blockIncrement="1.0" layoutX="113.0" layoutY="155.0" max="10.0" min="1.0" orientation="VERTICAL" prefHeight="108.0" prefWidth="16.0" value="1.0" />
+      <Slider fx:id="creativityInput" blockIncrement="1.0" layoutX="178.0" layoutY="155.0" max="10.0" min="1.0" orientation="VERTICAL" prefHeight="108.0" prefWidth="16.0" value="1.0" />
+      <Label layoutX="77.0" layoutY="155.0" text="10">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="155.0" text="10">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="246.0" text="1">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="246.0" text="1">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="createFriendBtn" layoutX="71.0" layoutY="323.0" mnemonicParsing="false" onAction="#createFriend" text="Create Friend">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="439.0" layoutY="19.0" text="Selected Friend">
+         <font>
+            <Font name="Baskerville" size="13.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_RIGHT" layoutX="403.0" layoutY="82.0" prefHeight="118.0" prefWidth="72.0" spacing="5.0">
+         <children>
+            <Label text="Name:">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Age:">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Kindness:">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Craziness:">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Creativity:">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="deleteFriendBtn" disable="true" layoutX="431.0" layoutY="232.0" mnemonicParsing="false" onAction="#deleteFriend" text="Delete Friend">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Button>
+      <VBox layoutX="485.0" layoutY="82.0" prefHeight="118.0" prefWidth="72.0" spacing="5.0">
+         <children>
+            <Label fx:id="nameDisplay">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ageDisplay">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="kindnessDisplay">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="crazinessDisplay">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="creativityDisplay">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="addGroupBtn" layoutX="439.0" layoutY="355.0" mnemonicParsing="false" onAction="#addGroup" text="Add group">
+         <font>
+            <Font name="Baskerville" size="14.0" />
+         </font>
+      </Button>
+      <VBox alignment="CENTER" layoutX="235.0" layoutY="6.0" prefHeight="41.0" prefWidth="131.0">
+         <children>
+            <Label alignment="CENTER" text="Currently Displaying:">
+               <font>
+                  <Font name="Baskerville" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentBook" text="Friends Book">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="changeBookDownBtn" layoutX="222.0" layoutY="28.0" mnemonicParsing="false" onAction="#changeBookDown" prefHeight="27.0" prefWidth="26.0" text="&lt;" />
+      <Button fx:id="changeBookUpBtn" layoutX="348.0" layoutY="28.0" mnemonicParsing="false" onAction="#changeBookUp" prefHeight="27.0" prefWidth="27.0" text="&gt;" />
+      <TextField fx:id="addGroupName" layoutX="392.0" layoutY="318.0" />
+      <VBox alignment="CENTER" layoutX="417.0" layoutY="273.0" prefHeight="41.0" prefWidth="117.0">
+         <children>
+            <Label fx:id="newListStatus" alignment="CENTER" prefHeight="18.0" prefWidth="134.0">
+               <font>
+                  <Font name="Baskerville" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
